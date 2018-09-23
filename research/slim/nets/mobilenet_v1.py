@@ -121,7 +121,7 @@ Conv = namedtuple('Conv', ['kernel', 'stride', 'depth'])
 DepthSepConv = namedtuple('DepthSepConv', ['kernel', 'stride', 'depth'])
 
 # _CONV_DEFS specifies the MobileNet body
-_CONV_DEFS = [
+MOBILENETV1_CONV_DEFS = [
     Conv(kernel=[3, 3], stride=2, depth=32),
     DepthSepConv(kernel=[3, 3], stride=1, depth=64),
     DepthSepConv(kernel=[3, 3], stride=2, depth=128),
